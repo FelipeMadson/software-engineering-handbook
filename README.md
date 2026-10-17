@@ -100,6 +100,6 @@ node -e "
 
 ## Author & Credits
 
-- **Author**: Felipe Madson ([@FelipeMadson](https://github.com/FelipeMadson))
+- **Author**: Felipe Madison ([@FelipeMadson](https://github.com/FelipeMadson))
 - **Methodology**: Local-First Engineering, Deterministic CI, Evidence-Based Research
 - **License**: MIT License
