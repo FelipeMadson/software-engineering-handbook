@@ -1,0 +1,55 @@
+{
+  "id": "crdt-offline-first",
+  "slug": "crdt-offline-first",
+  "title": "Sincronização Offline-First e Resolução de Conflitos com CRDTs",
+  "subtitle": "Arquitetura de Dados Resiliente para Clientes Web e Mobile com SQLite Local e Redes Degradadas",
+  "author": "Felipe Madson (@FelipeMadson)",
+  "version": "1.0.0",
+  "createdAt": "2026-10-17T00:33:07.489Z",
+  "updatedAt": "2026-10-17T00:33:07.489Z",
+  "track": "commercial",
+  "category": "Sistemas Distribuídos & Offline-First",
+  "summary": "Arquitetura prática para construção de aplicações comerciais que continuam 100% operacionais offline e convergem dados sem perda quando a conexão é restabelecida.",
+  "tableOfContents": [
+    {
+      "chapterNumber": 1,
+      "title": "Fundamentos e Motivação do Problema",
+      "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+      "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+    },
+    {
+      "chapterNumber": 2,
+      "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+      "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+      "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+    },
+    {
+      "chapterNumber": 3,
+      "title": "Implementação de Referência em TypeScript Estrito",
+      "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+      "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+    },
+    {
+      "chapterNumber": 4,
+      "title": "Verificação Estática e Análise de Segurança com REA",
+      "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+      "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+    },
+    {
+      "chapterNumber": 5,
+      "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+      "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+      "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+    },
+    {
+      "chapterNumber": 6,
+      "title": "Manual Operacional de Produção e Observabilidade",
+      "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+      "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+    }
+  ],
+  "wordCount": 1033,
+  "readingTimeMinutes": 6,
+  "verifiedSha256": "54ed15fed92bb01652f979dea8b659d24e0d51842dc40346eb4a0bd4538ef753",
+  "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\crdt-offline-first\\README.md"
+}

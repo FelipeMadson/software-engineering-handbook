@@ -1,0 +1,55 @@
+{
+  "id": "idempotent-queue-guard",
+  "slug": "idempotent-queue-guard",
+  "title": "Idempotent Queue Architecture: Garantindo Once-And-Only-Once em Sistemas Distribuídos",
+  "subtitle": "Padrões de Deduplicação Determinística, Controle Atômico de Leases e Recuperação de Falhas",
+  "author": "Felipe Madson (@FelipeMadson)",
+  "version": "1.0.0",
+  "createdAt": "2026-10-17T00:33:07.482Z",
+  "updatedAt": "2026-10-17T00:33:07.482Z",
+  "track": "systems-security",
+  "category": "Arquitetura de Backend Distribuído",
+  "summary": "Guia arquitetural e operacional abrangente para mitigar efeitos colaterais de re-entregas de mensagens em mensageria distribuída com TypeScript e SQLite.",
+  "tableOfContents": [
+    {
+      "chapterNumber": 1,
+      "title": "Fundamentos e Motivação do Problema",
+      "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+      "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+    },
+    {
+      "chapterNumber": 2,
+      "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+      "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+      "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+    },
+    {
+      "chapterNumber": 3,
+      "title": "Implementação de Referência em TypeScript Estrito",
+      "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+      "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+    },
+    {
+      "chapterNumber": 4,
+      "title": "Verificação Estática e Análise de Segurança com REA",
+      "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+      "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+    },
+    {
+      "chapterNumber": 5,
+      "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+      "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+      "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+    },
+    {
+      "chapterNumber": 6,
+      "title": "Manual Operacional de Produção e Observabilidade",
+      "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+      "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+    }
+  ],
+  "wordCount": 1034,
+  "readingTimeMinutes": 6,
+  "verifiedSha256": "01e72a5568319f204b63bb8ac8f6d7b5d817c493bac5e089bac4c2faa83ee5ce",
+  "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\idempotent-queue-guard\\README.md"
+}

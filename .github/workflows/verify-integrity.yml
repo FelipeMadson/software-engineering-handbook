@@ -1,0 +1,53 @@
+name: Verify eBooks Integrity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify Cryptographic SHA-256 Hashes
+        run: |
+          node -e "
+            const fs = require('fs');
+            const crypto = require('crypto');
+            const path = require('path');
+            const manifest = JSON.parse(fs.readFileSync('ebooks/manifest.json', 'utf8'));
+            let failed = 0;
+            console.log('Verifying ' + manifest.ebooks.length + ' technical volumes...');
+            for (const b of manifest.ebooks) {
+              const file = path.join('ebooks', b.slug, 'README.md');
+              if (!fs.existsSync(file)) {
+                console.error('ERROR: Missing ' + file);
+                failed++;
+                continue;
+              }
+              const content = fs.readFileSync(file);
+              const hash = crypto.createHash('sha256').update(content).digest('hex');
+              if (hash !== b.verifiedSha256) {
+                console.error('ERROR: Hash mismatch for ' + b.slug);
+                console.error('  Expected: ' + b.verifiedSha256);
+                console.error('  Observed: ' + hash);
+                failed++;
+              } else {
+                console.log('PASS: ' + b.slug + ' (' + hash.substring(0, 16) + '...)');
+              }
+            }
+            if (failed > 0) {
+              console.error('Verification failed: ' + failed + ' errors.');
+              process.exit(1);
+            }
+            console.log('All eBook volumes verified successfully with 100% cryptographic integrity.');
+          "

@@ -1,0 +1,55 @@
+{
+  "id": "arquitetura-de-segredos-e-isolamento-em-ci",
+  "slug": "arquitetura-de-segredos-e-isolamento-em-ci",
+  "title": "Guia de Engenharia: Arquitetura de Segredos e Isolamento em CI",
+  "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
+  "author": "Felipe Madson (@FelipeMadson)",
+  "version": "1.0.0",
+  "createdAt": "2026-10-17T00:50:28.504Z",
+  "updatedAt": "2026-10-17T00:50:28.504Z",
+  "track": "professional",
+  "category": "Engenharia de Software de Produção",
+  "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Arquitetura de Segredos e Isolamento em CI.",
+  "tableOfContents": [
+    {
+      "chapterNumber": 1,
+      "title": "Fundamentos e Motivação do Problema",
+      "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+      "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+    },
+    {
+      "chapterNumber": 2,
+      "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+      "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+      "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+    },
+    {
+      "chapterNumber": 3,
+      "title": "Implementação de Referência em TypeScript Estrito",
+      "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+      "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+    },
+    {
+      "chapterNumber": 4,
+      "title": "Verificação Estática e Análise de Segurança com REA",
+      "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+      "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+    },
+    {
+      "chapterNumber": 5,
+      "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+      "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+      "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+    },
+    {
+      "chapterNumber": 6,
+      "title": "Manual Operacional de Produção e Observabilidade",
+      "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+      "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+    }
+  ],
+  "wordCount": 1023,
+  "readingTimeMinutes": 6,
+  "verifiedSha256": "ebba693c8191efb6105be28b938b9e33c515ee4afe05a364f0164a75bc138dbe",
+  "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\arquitetura-de-segredos-e-isolamento-em-ci\\README.md"
+}
