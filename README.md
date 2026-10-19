@@ -5,7 +5,7 @@
 [![Verification: Cryptographic SHA-256](https://img.shields.io/badge/Integrity-SHA--256-emerald.svg)](ebooks/metadata.json)
 [![Bilingual: English & Portuguese](https://img.shields.io/badge/Language-EN%20%7C%20PT--BR-blue.svg)](README.pt-BR.md)
 
-An exhaustive, peer-grade repository of software engineering handbooks, distributed systems architecture whitepapers, and local-first systems design manuals authored by **Felipe Madson** with local deterministic AI assistance.
+An exhaustive, peer-grade repository of software engineering handbooks, distributed systems architecture whitepapers, and local-first systems design manuals authored by **Felipe Madison** with local deterministic AI assistance.
 
 [Versão em Português](README.pt-BR.md) · [Portfolio](https://felipemadson.github.io/portfolio/) · [GitHub Profile](https://github.com/FelipeMadson)
 
