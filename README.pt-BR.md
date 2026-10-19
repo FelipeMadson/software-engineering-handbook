@@ -5,7 +5,7 @@
 [![Integridade: SHA-256 Criptográfico](https://img.shields.io/badge/Integridade-SHA--256-emerald.svg)](ebooks/metadata.json)
 [![Bilingue: Inglês & Português](https://img.shields.io/badge/Idioma-EN%20%7C%20PT--BR-blue.svg)](README.md)
 
-Repositório detalhado de manuais de engenharia de software, whitepapers de arquitetura de sistemas distribuídos e guias de design de sistemas *local-first*, de autoria de **Felipe Madson** com suporte de inteligência artificial determinística local.
+Repositório detalhado de manuais de engenharia de software, whitepapers de arquitetura de sistemas distribuídos e guias de design de sistemas *local-first*, de autoria de **Felipe Madison** com suporte de inteligência artificial determinística local.
 
 [English Version](README.md) · [Portfólio](https://felipemadson.github.io/portfolio/) · [Perfil no GitHub](https://github.com/FelipeMadson)
 
@@ -74,6 +74,6 @@ node -e "
 
 ## Autor & Créditos
 
-- **Autor**: Felipe Madson ([@FelipeMadson](https://github.com/FelipeMadson))
+- **Autor**: Felipe Madison ([@FelipeMadson](https://github.com/FelipeMadson))
 - **Metodologia**: Engenharia Local-First, CI Determinístico, Pesquisa Baseada em Evidências
 - **Licença**: Licença MIT
