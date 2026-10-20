@@ -1,9 +1,64 @@
 {
   "repository": "FelipeMadson/software-engineering-handbook",
   "author": "Felipe Madison (@FelipeMadson)",
-  "totalVolumes": 8,
-  "updatedAt": "2026-10-20T11:23:46.697Z",
+  "totalVolumes": 9,
+  "updatedAt": "2026-10-20T11:59:43.689Z",
   "volumes": [
+    {
+      "id": "event-sourcing-transactional-outbox",
+      "slug": "event-sourcing-transactional-outbox",
+      "title": "Guia de Engenharia: Padrões de Consistência Eventual, Event Sourcing e Transactional Outbox de Alta Vazão",
+      "subtitle": "Arquiteturas CQRS Reativas, Replay Determinístico de Eventos e Eliminação de Dual-Writes Distribuídos",
+      "author": "Felipe Madison (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-20T11:57:29.322Z",
+      "updatedAt": "2026-10-20T11:57:29.322Z",
+      "track": "commercial",
+      "category": "Arquitetura de Microsserviços & Event Sourcing",
+      "summary": "Tratado de engenharia avançada abordando a transição de bancos relacionais orientados a estado mutável para fluxos imutáveis de eventos com consistência eventual garantida.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1050,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "a7ad8a1ec0005163a179feb53e1cfd869747856de04bbd5b29df98b41890fec8",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\event-sourcing-transactional-outbox\\README.md"
+    },
     {
       "id": "fastapi-realtime-collaborative-engine",
       "slug": "fastapi-realtime-collaborative-engine",
