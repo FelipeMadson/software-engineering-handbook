@@ -1,0 +1,55 @@
+{
+  "id": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
+  "slug": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
+  "title": "Guia de Engenharia: Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust",
+  "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
+  "author": "Felipe Madison (@FelipeMadson)",
+  "version": "1.0.0",
+  "createdAt": "2026-10-20T03:18:22.378Z",
+  "updatedAt": "2026-10-20T03:18:22.378Z",
+  "track": "professional",
+  "category": "Engenharia de Software de Produção",
+  "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust.",
+  "tableOfContents": [
+    {
+      "chapterNumber": 1,
+      "title": "Fundamentos e Motivação do Problema",
+      "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+      "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+    },
+    {
+      "chapterNumber": 2,
+      "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+      "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+      "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+    },
+    {
+      "chapterNumber": 3,
+      "title": "Implementação de Referência em TypeScript Estrito",
+      "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+      "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+    },
+    {
+      "chapterNumber": 4,
+      "title": "Verificação Estática e Análise de Segurança com REA",
+      "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+      "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+    },
+    {
+      "chapterNumber": 5,
+      "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+      "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+      "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+    },
+    {
+      "chapterNumber": 6,
+      "title": "Manual Operacional de Produção e Observabilidade",
+      "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+      "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+    }
+  ],
+  "wordCount": 1032,
+  "readingTimeMinutes": 6,
+  "verifiedSha256": "0a302db65db2e0b85ba4cdee32a7d9f3bd7a922be73f786540366e4852af09e5",
+  "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust\\README.md"
+}
