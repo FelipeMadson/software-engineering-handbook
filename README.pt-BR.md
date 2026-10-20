@@ -24,6 +24,7 @@ Cada livro técnico desta coleção possui um hash SHA-256 imutável e contagem 
 | **05** | [Arquitetura de Segredos, Sandboxing e Isolamento em CI/CD](ebooks/arquitetura-de-segredos-e-isolamento-em-ci/README.md) | AppSec, Contêineres Efêmeros, Zero-Trust | `d720b005...` | Markdown & Segurança |
 | **06** | [Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust](ebooks/engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust/README.md) | Programação de Sistemas, Armazenamento, Concorrência | `0a302db6...` | Markdown & Código Rust |
 | **07** | [Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust](ebooks/rust-wasm-simd-vector-search/README.md) | IA de Borda, WASM SIMD, Indexação Vetorial | `2b992d38...` | Markdown & WASM |
+| **08** | [Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python](ebooks/fastapi-realtime-collaborative-engine/README.md) | Tempo Real Distribuído, WebSockets, CRDTs Baseados em Estado | `91836c97...` | Markdown e Código Python |
 
 ---
 

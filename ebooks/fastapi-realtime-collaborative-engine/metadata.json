@@ -1,0 +1,55 @@
+{
+  "id": "fastapi-realtime-collaborative-engine",
+  "slug": "fastapi-realtime-collaborative-engine",
+  "title": "Guia de Engenharia: Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python",
+  "subtitle": "Sincronização Distribuída sem Locks, Resolução Determinística de Conflitos com LWW-Element-Set e Contadores PN",
+  "author": "Felipe Madison (@FelipeMadson)",
+  "version": "1.0.0",
+  "createdAt": "2026-10-20T11:22:54.958Z",
+  "updatedAt": "2026-10-20T11:22:54.958Z",
+  "track": "systems-security",
+  "category": "Sistemas Distribuídos & Tempo Real",
+  "summary": "Arquitetura detalhada para construção de sistemas de colaboração síncrona (estilo Figma, Notion e Linear) utilizando FastAPI, WebSockets assíncronos e Tipos de Dados Replicados Sem Conflito (CRDTs) em Python 3.12.",
+  "tableOfContents": [
+    {
+      "chapterNumber": 1,
+      "title": "Fundamentos e Motivação do Problema",
+      "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+      "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+    },
+    {
+      "chapterNumber": 2,
+      "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+      "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+      "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+    },
+    {
+      "chapterNumber": 3,
+      "title": "Implementação de Referência em TypeScript Estrito",
+      "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+      "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+    },
+    {
+      "chapterNumber": 4,
+      "title": "Verificação Estática e Análise de Segurança com REA",
+      "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+      "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+    },
+    {
+      "chapterNumber": 5,
+      "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+      "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+      "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+    },
+    {
+      "chapterNumber": 6,
+      "title": "Manual Operacional de Produção e Observabilidade",
+      "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+      "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+    }
+  ],
+  "wordCount": 1049,
+  "readingTimeMinutes": 6,
+  "verifiedSha256": "91836c97704e884ded9edbf681e7d0124b38c814210ced7daa8a35585a4f8513",
+  "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\fastapi-realtime-collaborative-engine\\README.md"
+}

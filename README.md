@@ -24,6 +24,7 @@ Every book in this collection is backed by an immutable cryptographic SHA-256 ch
 | **05** | [Arquitetura de Segredos, Sandboxing e Isolamento Criptográfico em CI/CD](ebooks/arquitetura-de-segredos-e-isolamento-em-ci/README.md) | AppSec, Ephemeral Containers, Zero-Trust | `d720b005...` | Markdown & Security |
 | **06** | [Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust](ebooks/engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust/README.md) | Systems Programming, Storage Engines, Concurrency | `0a302db6...` | Markdown & Rust Code |
 | **07** | [Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust](ebooks/rust-wasm-simd-vector-search/README.md) | Edge AI, WASM SIMD, Vector Indexing | `2b992d38...` | Markdown & WASM |
+| **08** | [Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python](ebooks/fastapi-realtime-collaborative-engine/README.md) | Distributed Realtime, WebSockets, State-based CRDTs | `91836c97...` | Markdown & Python Code |
 
 ---
 

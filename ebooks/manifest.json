@@ -1,387 +1,448 @@
-[
-  {
-    "id": "arquitetura-de-segredos-e-isolamento-em-ci",
-    "slug": "arquitetura-de-segredos-e-isolamento-em-ci",
-    "title": "Guia de Engenharia: Arquitetura de Segredos e Isolamento em CI",
-    "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
-    "author": "Felipe Madson (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-17T00:50:28.504Z",
-    "updatedAt": "2026-10-17T00:50:28.504Z",
-    "track": "professional",
-    "category": "Engenharia de Software de Produção",
-    "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Arquitetura de Segredos e Isolamento em CI.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1023,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "ebba693c8191efb6105be28b938b9e33c515ee4afe05a364f0164a75bc138dbe",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\arquitetura-de-segredos-e-isolamento-em-ci\\README.md"
-  },
-  {
-    "id": "crdt-offline-first",
-    "slug": "crdt-offline-first",
-    "title": "Sincronização Offline-First e Resolução de Conflitos com CRDTs",
-    "subtitle": "Arquitetura de Dados Resiliente para Clientes Web e Mobile com SQLite Local e Redes Degradadas",
-    "author": "Felipe Madson (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-17T00:33:07.489Z",
-    "updatedAt": "2026-10-17T00:33:07.489Z",
-    "track": "commercial",
-    "category": "Sistemas Distribuídos & Offline-First",
-    "summary": "Arquitetura prática para construção de aplicações comerciais que continuam 100% operacionais offline e convergem dados sem perda quando a conexão é restabelecida.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1033,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "54ed15fed92bb01652f979dea8b659d24e0d51842dc40346eb4a0bd4538ef753",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\crdt-offline-first\\README.md"
-  },
-  {
-    "id": "deterministic-dev-environments",
-    "slug": "deterministic-dev-environments",
-    "title": "Ambientes Determinísticos de Desenvolvimento: Blindagem Local e Zero-Leak Secret Masking",
-    "subtitle": "Construção de Linters, Runners Isolados e Proteção Ativa Contra Vazamento de Credenciais",
-    "author": "Felipe Madson (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-17T00:33:07.486Z",
-    "updatedAt": "2026-10-17T00:33:07.486Z",
-    "track": "professional",
-    "category": "DevOps & Developer Tools",
-    "summary": "Manual de engenharia para eliminar o efeito \"na minha máquina funciona\" utilizando checagens estáticas determinísticas, duplo mascaramento de segredos e isolamento local.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1033,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "56aa122ddb7adbc9ef26ee3088037720d8e2e2a9ef2705a84cffa8e8d2c5ec63",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\deterministic-dev-environments\\README.md"
-  },
-  {
-    "id": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
-    "slug": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
-    "title": "Guia de Engenharia: Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust",
-    "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
-    "author": "Felipe Madison (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-20T03:18:22.378Z",
-    "updatedAt": "2026-10-20T03:18:22.378Z",
-    "track": "professional",
-    "category": "Engenharia de Software de Produção",
-    "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1032,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "0a302db65db2e0b85ba4cdee32a7d9f3bd7a922be73f786540366e4852af09e5",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust\\README.md"
-  },
-  {
-    "id": "idempotent-queue-guard",
-    "slug": "idempotent-queue-guard",
-    "title": "Idempotent Queue Architecture: Garantindo Once-And-Only-Once em Sistemas Distribuídos",
-    "subtitle": "Padrões de Deduplicação Determinística, Controle Atômico de Leases e Recuperação de Falhas",
-    "author": "Felipe Madson (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-17T00:33:07.482Z",
-    "updatedAt": "2026-10-17T00:33:07.482Z",
-    "track": "systems-security",
-    "category": "Arquitetura de Backend Distribuído",
-    "summary": "Guia arquitetural e operacional abrangente para mitigar efeitos colaterais de re-entregas de mensagens em mensageria distribuída com TypeScript e SQLite.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1034,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "01e72a5568319f204b63bb8ac8f6d7b5d817c493bac5e089bac4c2faa83ee5ce",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\idempotent-queue-guard\\README.md"
-  },
-  {
-    "id": "multitenant-security-rls",
-    "slug": "multitenant-security-rls",
-    "title": "Isolamento Multi-Tenant Enterprise com Row-Level Security no PostgreSQL",
-    "subtitle": "Defesa em Profundidade contra Vazamentos Cruzados de Dados em Plataformas SaaS",
-    "author": "Felipe Madson (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-17T00:33:07.491Z",
-    "updatedAt": "2026-10-17T00:33:07.491Z",
-    "track": "commercial",
-    "category": "Segurança de Banco de Dados & SaaS",
-    "summary": "Guia definitivo de mitigação de vazamento multi-inquilino através de políticas no motor do banco de dados, auditorias de hash imutáveis e pools de conexões seguros.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1038,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "efb040cd6cd95eb06fc2c79e590defa614ec759425b798d6b619fba419bffa30",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\multitenant-security-rls\\README.md"
-  },
-  {
-    "id": "rust-wasm-simd-vector-search",
-    "slug": "rust-wasm-simd-vector-search",
-    "title": "Guia de Engenharia: Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust",
-    "subtitle": "Compilação Segura para a Borda, Aceleração Vetorial de 128 Bits e Indexação em Grafo Navegável",
-    "author": "Felipe Madison (@FelipeMadson)",
-    "version": "1.0.0",
-    "createdAt": "2026-10-20T03:30:24.223Z",
-    "updatedAt": "2026-10-20T03:30:24.223Z",
-    "track": "systems-security",
-    "category": "Sistemas de Borda & Engenharia de IA",
-    "summary": "Arquitetura e implementação de alta performance para busca semântica em tempo real compilada para WebAssembly, operando diretamente na memória do cliente com aceleração SIMD nativa.",
-    "tableOfContents": [
-      {
-        "chapterNumber": 1,
-        "title": "Fundamentos e Motivação do Problema",
-        "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
-        "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
-      },
-      {
-        "chapterNumber": 2,
-        "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
-        "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
-        "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
-      },
-      {
-        "chapterNumber": 3,
-        "title": "Implementação de Referência em TypeScript Estrito",
-        "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
-        "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
-      },
-      {
-        "chapterNumber": 4,
-        "title": "Verificação Estática e Análise de Segurança com REA",
-        "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
-        "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
-      },
-      {
-        "chapterNumber": 5,
-        "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
-        "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
-        "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
-      },
-      {
-        "chapterNumber": 6,
-        "title": "Manual Operacional de Produção e Observabilidade",
-        "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
-        "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
-      }
-    ],
-    "wordCount": 1058,
-    "readingTimeMinutes": 6,
-    "verifiedSha256": "2b992d38541da1778dc1ac1d75f057aebb517bf6c3d5fd572c1d2b3bb436ac52",
-    "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\rust-wasm-simd-vector-search\\README.md"
-  }
-]
+{
+  "repository": "FelipeMadson/software-engineering-handbook",
+  "author": "Felipe Madison (@FelipeMadson)",
+  "totalVolumes": 8,
+  "updatedAt": "2026-10-20T11:23:46.697Z",
+  "volumes": [
+    {
+      "id": "fastapi-realtime-collaborative-engine",
+      "slug": "fastapi-realtime-collaborative-engine",
+      "title": "Guia de Engenharia: Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python",
+      "subtitle": "Sincronização Distribuída sem Locks, Resolução Determinística de Conflitos com LWW-Element-Set e Contadores PN",
+      "author": "Felipe Madison (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-20T11:22:54.958Z",
+      "updatedAt": "2026-10-20T11:22:54.958Z",
+      "track": "systems-security",
+      "category": "Sistemas Distribuídos & Tempo Real",
+      "summary": "Arquitetura detalhada para construção de sistemas de colaboração síncrona (estilo Figma, Notion e Linear) utilizando FastAPI, WebSockets assíncronos e Tipos de Dados Replicados Sem Conflito (CRDTs) em Python 3.12.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1049,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "91836c97704e884ded9edbf681e7d0124b38c814210ced7daa8a35585a4f8513",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\fastapi-realtime-collaborative-engine\\README.md"
+    },
+    {
+      "id": "rust-wasm-simd-vector-search",
+      "slug": "rust-wasm-simd-vector-search",
+      "title": "Guia de Engenharia: Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust",
+      "subtitle": "Compilação Segura para a Borda, Aceleração Vetorial de 128 Bits e Indexação em Grafo Navegável",
+      "author": "Felipe Madison (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-20T03:30:24.223Z",
+      "updatedAt": "2026-10-20T03:30:24.223Z",
+      "track": "systems-security",
+      "category": "Sistemas de Borda & Engenharia de IA",
+      "summary": "Arquitetura e implementação de alta performance para busca semântica em tempo real compilada para WebAssembly, operando diretamente na memória do cliente com aceleração SIMD nativa.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1058,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "2b992d38541da1778dc1ac1d75f057aebb517bf6c3d5fd572c1d2b3bb436ac52",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\rust-wasm-simd-vector-search\\README.md"
+    },
+    {
+      "id": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
+      "slug": "engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust",
+      "title": "Guia de Engenharia: Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust",
+      "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
+      "author": "Felipe Madison (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-20T03:18:22.378Z",
+      "updatedAt": "2026-10-20T03:18:22.378Z",
+      "track": "professional",
+      "category": "Engenharia de Software de Produção",
+      "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Engenharia de Armazenamento LSM-Tree com MemTable e WAL em Rust.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1032,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "0a302db65db2e0b85ba4cdee32a7d9f3bd7a922be73f786540366e4852af09e5",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\engenharia-de-armazenamento-lsm-tree-com-memtable-e-wal-em-rust\\README.md"
+    },
+    {
+      "id": "arquitetura-de-segredos-e-isolamento-em-ci",
+      "slug": "arquitetura-de-segredos-e-isolamento-em-ci",
+      "title": "Guia de Engenharia: Arquitetura de Segredos e Isolamento em CI",
+      "subtitle": "Princípios Arquiteturais, Implementação Resiliente e Verificação de Sistemas",
+      "author": "Felipe Madson (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-17T00:50:28.504Z",
+      "updatedAt": "2026-10-17T00:50:28.504Z",
+      "track": "professional",
+      "category": "Engenharia de Software de Produção",
+      "summary": "Documentação técnica aprofundada e manual de engenharia abordando problemas reais em torno de Arquitetura de Segredos e Isolamento em CI.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1023,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "ebba693c8191efb6105be28b938b9e33c515ee4afe05a364f0164a75bc138dbe",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\arquitetura-de-segredos-e-isolamento-em-ci\\README.md"
+    },
+    {
+      "id": "multitenant-security-rls",
+      "slug": "multitenant-security-rls",
+      "title": "Isolamento Multi-Tenant Enterprise com Row-Level Security no PostgreSQL",
+      "subtitle": "Defesa em Profundidade contra Vazamentos Cruzados de Dados em Plataformas SaaS",
+      "author": "Felipe Madson (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-17T00:33:07.491Z",
+      "updatedAt": "2026-10-17T00:33:07.491Z",
+      "track": "commercial",
+      "category": "Segurança de Banco de Dados & SaaS",
+      "summary": "Guia definitivo de mitigação de vazamento multi-inquilino através de políticas no motor do banco de dados, auditorias de hash imutáveis e pools de conexões seguros.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1038,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "efb040cd6cd95eb06fc2c79e590defa614ec759425b798d6b619fba419bffa30",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\multitenant-security-rls\\README.md"
+    },
+    {
+      "id": "crdt-offline-first",
+      "slug": "crdt-offline-first",
+      "title": "Sincronização Offline-First e Resolução de Conflitos com CRDTs",
+      "subtitle": "Arquitetura de Dados Resiliente para Clientes Web e Mobile com SQLite Local e Redes Degradadas",
+      "author": "Felipe Madson (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-17T00:33:07.489Z",
+      "updatedAt": "2026-10-17T00:33:07.489Z",
+      "track": "commercial",
+      "category": "Sistemas Distribuídos & Offline-First",
+      "summary": "Arquitetura prática para construção de aplicações comerciais que continuam 100% operacionais offline e convergem dados sem perda quando a conexão é restabelecida.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1033,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "54ed15fed92bb01652f979dea8b659d24e0d51842dc40346eb4a0bd4538ef753",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\crdt-offline-first\\README.md"
+    },
+    {
+      "id": "deterministic-dev-environments",
+      "slug": "deterministic-dev-environments",
+      "title": "Ambientes Determinísticos de Desenvolvimento: Blindagem Local e Zero-Leak Secret Masking",
+      "subtitle": "Construção de Linters, Runners Isolados e Proteção Ativa Contra Vazamento de Credenciais",
+      "author": "Felipe Madson (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-17T00:33:07.486Z",
+      "updatedAt": "2026-10-17T00:33:07.486Z",
+      "track": "professional",
+      "category": "DevOps & Developer Tools",
+      "summary": "Manual de engenharia para eliminar o efeito \"na minha máquina funciona\" utilizando checagens estáticas determinísticas, duplo mascaramento de segredos e isolamento local.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1033,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "56aa122ddb7adbc9ef26ee3088037720d8e2e2a9ef2705a84cffa8e8d2c5ec63",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\deterministic-dev-environments\\README.md"
+    },
+    {
+      "id": "idempotent-queue-guard",
+      "slug": "idempotent-queue-guard",
+      "title": "Idempotent Queue Architecture: Garantindo Once-And-Only-Once em Sistemas Distribuídos",
+      "subtitle": "Padrões de Deduplicação Determinística, Controle Atômico de Leases e Recuperação de Falhas",
+      "author": "Felipe Madson (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-17T00:33:07.482Z",
+      "updatedAt": "2026-10-17T00:33:07.482Z",
+      "track": "systems-security",
+      "category": "Arquitetura de Backend Distribuído",
+      "summary": "Guia arquitetural e operacional abrangente para mitigar efeitos colaterais de re-entregas de mensagens em mensageria distribuída com TypeScript e SQLite.",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1034,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "01e72a5568319f204b63bb8ac8f6d7b5d817c493bac5e089bac4c2faa83ee5ce",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\idempotent-queue-guard\\README.md"
+    }
+  ]
+}
