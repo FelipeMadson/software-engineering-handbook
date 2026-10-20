@@ -26,6 +26,7 @@ Every book in this collection is backed by an immutable cryptographic SHA-256 ch
 | **07** | [Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust](ebooks/rust-wasm-simd-vector-search/README.md) | Edge AI, WASM SIMD, Vector Indexing | `2b992d38...` | Markdown & WASM |
 | **08** | [Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python](ebooks/fastapi-realtime-collaborative-engine/README.md) | Distributed Realtime, WebSockets, State-based CRDTs | `91836c97...` | Markdown & Python Code |
 | **09** | [High-Throughput Event Sourcing, Reactive CQRS, and Transactional Outbox Patterns](ebooks/event-sourcing-transactional-outbox/README.md) | Event Sourcing, CQRS, Transactional Outbox, Eventual Consistency | `a7ad8a1e...` | Markdown & TypeScript / C# |
+| **10** | [Ultra-Low Latency & Extreme Fault-Tolerance: From CPU to Distributed Clusters](ebooks/low-latency-fault-tolerant-systems/README.md) | C++20 Lock-Free Disruptor, LOB Matching, Elixir/OTP Actor Mesh | `1eb06fa7...` | Markdown & C++ / Elixir Code |
 
 ---
 

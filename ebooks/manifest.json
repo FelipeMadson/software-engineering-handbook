@@ -1,9 +1,64 @@
 {
   "repository": "FelipeMadson/software-engineering-handbook",
   "author": "Felipe Madison (@FelipeMadson)",
-  "totalVolumes": 9,
-  "updatedAt": "2026-10-20T11:59:43.689Z",
+  "totalVolumes": 10,
+  "updatedAt": "2026-10-20T13:39:42.405Z",
   "volumes": [
+    {
+      "id": "low-latency-fault-tolerant-systems",
+      "slug": "low-latency-fault-tolerant-systems",
+      "title": "Guia de Engenharia: Arquitetura de Ultrabaixa Latência e Tolerância Extrema a Falhas: Da CPU ao Cluster Distribuído",
+      "subtitle": "Filas Lock-Free em C++20, Alinhamento de Cache, Padrão LMAX Disruptor e Redes de Atores Resilientes em Elixir/OTP",
+      "author": "Felipe Madison (@FelipeMadson)",
+      "version": "1.0.0",
+      "createdAt": "2026-10-20T13:31:33.474Z",
+      "updatedAt": "2026-10-20T13:31:33.475Z",
+      "track": "systems-security",
+      "category": "Sistemas de Baixa Latência & Concorrência Distribuída",
+      "summary": "Tratado abrangente sobre engenharia de software de missão crítica, explorando técnicas de otimização mecânica de hardware (C++20) e modelos de isolamento massivo de falhas por atores (BEAM/OTP 27).",
+      "tableOfContents": [
+        {
+          "chapterNumber": 1,
+          "title": "Fundamentos e Motivação do Problema",
+          "anchor": "#capitulo-1-fundamentos-e-motivacao-do-problema",
+          "summary": "Análise detalhada das falhas operacionais e ameaças que justificam a solução."
+        },
+        {
+          "chapterNumber": 2,
+          "title": "Fundamentos Arquiteturais e Modelo de Ameaças",
+          "anchor": "#capitulo-2-fundamentos-arquiteturais-e-modelo-de-ameacas",
+          "summary": "Definição de invariantes estruturais, limites de contenção e fluxo de dados."
+        },
+        {
+          "chapterNumber": 3,
+          "title": "Implementação de Referência em TypeScript Estrito",
+          "anchor": "#capitulo-3-implementacao-de-referencia-em-typescript-estrito",
+          "summary": "Código de produção limpo, tipagem forte com Zod e padrões de concorrência."
+        },
+        {
+          "chapterNumber": 4,
+          "title": "Verificação Estática e Análise de Segurança com REA",
+          "anchor": "#capitulo-4-verificacao-estatica-e-analise-de-seguranca-com-rea",
+          "summary": "Auditoria de AST, inspeção de fronteiras e validação de contratos de execução."
+        },
+        {
+          "chapterNumber": 5,
+          "title": "Estratégia de Testes Automatizados e Gates de Aceitação",
+          "anchor": "#capitulo-5-estrategia-de-testes-automatizados-e-gates-de-aceitacao",
+          "summary": "Testes de unidade, mutação, estresse concorrente e ausência de simulações falsas."
+        },
+        {
+          "chapterNumber": 6,
+          "title": "Manual Operacional de Produção e Observabilidade",
+          "anchor": "#capitulo-6-manual-operacional-de-producao-e-observabilidade",
+          "summary": "Métricas essenciais, telemetria Prometheus, planos de rollback e mitigação."
+        }
+      ],
+      "wordCount": 1070,
+      "readingTimeMinutes": 6,
+      "verifiedSha256": "1eb06fa724e2d044850c5f1af5cbd30ce6c3319341c5892402d8cdfab04e74b9",
+      "outputFilePath": "C:\\Users\\felip\\Documents\\github_improvement\\ebooks\\low-latency-fault-tolerant-systems\\README.md"
+    },
     {
       "id": "event-sourcing-transactional-outbox",
       "slug": "event-sourcing-transactional-outbox",

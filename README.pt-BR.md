@@ -26,6 +26,7 @@ Cada livro técnico desta coleção possui um hash SHA-256 imutável e contagem 
 | **07** | [Busca Vetorial de Baixa Latência com WebAssembly SIMD e Grafo HNSW em Rust](ebooks/rust-wasm-simd-vector-search/README.md) | IA de Borda, WASM SIMD, Indexação Vetorial | `2b992d38...` | Markdown & WASM |
 | **08** | [Motores Colaborativos em Tempo Real com FastAPI, WebSockets e CRDTs Concorrentes em Python](ebooks/fastapi-realtime-collaborative-engine/README.md) | Tempo Real Distribuído, WebSockets, CRDTs Baseados em Estado | `91836c97...` | Markdown e Código Python |
 | **09** | [Guia de Engenharia: Padrões de Consistência Eventual, Event Sourcing e Transactional Outbox de Alta Vazão](ebooks/event-sourcing-transactional-outbox/README.md) | Event Sourcing, CQRS, Transactional Outbox, Consistência Eventual | `a7ad8a1e...` | Markdown & TypeScript / C# |
+| **10** | [Guia de Engenharia: Arquitetura de Ultrabaixa Latência e Tolerância Extrema a Falhas: Da CPU ao Cluster Distribuído](ebooks/low-latency-fault-tolerant-systems/README.md) | C++20 Lock-Free Disruptor, LOB Matching, Malha de Atores Elixir/OTP | `1eb06fa7...` | Markdown & Código C++ / Elixir |
 
 ---
 
