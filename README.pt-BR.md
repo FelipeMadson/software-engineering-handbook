@@ -30,6 +30,18 @@ Cada livro técnico desta coleção possui um hash SHA-256 imutável e contagem 
 
 ---
 
+## 🎓 Artigos Acadêmicos & Pesquisas Formais (IEEEtran & BibTeX)
+
+Artigos de pesquisa acadêmica formal com formulações matemáticas rigorosas, teoremas verificáveis, fontes em LaTeX (formato IEEEtran) e referências BibTeX:
+
+| Título & Linha de Pesquisa | Especificação Formal & Teoremas | Modelo Matemático | Artefatos de Pesquisa |
+| :--- | :--- | :--- | :---: |
+| **Replicação Determinística de Máquinas de Estados: Verificação Formal de Segurança e Vivacidade em Quóruns Distribuídos sob Partições Assimétricas**<br>*(Sistemas Distribuídos & Métodos Formais)* | • **Teorema 1 (Segurança de Estado):** Índice de commit $k$ idêntico em nós sadios implica execução idêntica de comandos $C_i(k) = C_j(k)$.<br>• **Teorema 2 (Log Matching):** Termo e índice iguais garantem histórico estritamente idêntico. | $\mathbf{S}_i = (t_i, v_i, \mathcal{L}_i, c_i, a_i)$<br>Quórum: $\mathcal{Q} = \lfloor N/2 \rfloor + 1$ | [📄 Artigo](papers/deterministic-state-machine-replication-raft/paper.md) · [LaTeX](papers/deterministic-state-machine-replication-raft/paper.tex) · [BibTeX](papers/deterministic-state-machine-replication-raft/references.bib) |
+| **Busca por Vizinhos Mais Próximos Sub-Milissegundo em WebAssembly: Quantização SIMD de 128-Bits e Travessia em Memória Limitada**<br>*(Sistemas, Algoritmos & Aceleração de Hardware)* | • **Limite de Erro de Quantização:** Erro de cosseno por quantização escalar uniforme limitado estritamente pela desigualdade de Cauchy-Schwarz: $\|d_c(\mathbf{q}, \mathbf{x}) - d_c(\mathbf{q}, \tilde{\mathbf{x}})\| \le \frac{\sqrt{D}}{255}$.<br>• Vetorização de produto escalar SIMD128 por hardware. | $\mathbf{q} \cdot \mathbf{x} = \sum_{k=0}^{D-1} q_k \cdot x_k$<br>$\mathcal{O}(D/4)$ ciclos WASM | [📄 Artigo](papers/simd-hnsw-vector-quantization-wasm/paper.md) · [LaTeX](papers/simd-hnsw-vector-quantization-wasm/paper.tex) · [BibTeX](papers/simd-hnsw-vector-quantization-wasm/references.bib) |
+| **Mecanismos Híbridos de Encapsulamento Pós-Quântico em Redes Mesh Edge Zero-Trust: Uma Redução Empírica IND-CCA2**<br>*(Criptografia Aplicada & Segurança em Malhas Mesh)* | • **Redução de Segurança IND-CCA2:** Encapsulamento híbrido permanece indistinguível sob ataques de texto-cifrado escolhido enquanto ML-KEM-768 ou X25519 não forem violados.<br>• Extração dupla de entropia pelo Leftover Hash Lemma. | $\mathbf{K} = \text{KDF}(\mathbf{K}_{\text{pqc}} \mathbin{\Vert} \mathbf{K}_{\text{classic}} \mathbin{\Vert} \mathbf{c}_1 \mathbin{\Vert} \mathbf{c}_2)$<br>$\mathbf{A}_{\text{Q}} \le \epsilon_{\text{KEM}} + \epsilon_{\text{ECDH}}$ | [📄 Artigo](papers/post-quantum-hybrid-key-exchange-mesh/paper.md) · [LaTeX](papers/post-quantum-hybrid-key-exchange-mesh/paper.tex) · [BibTeX](papers/post-quantum-hybrid-key-exchange-mesh/references.bib) |
+
+---
+
 ## Topologia Arquitetural Unificada
 
 ```
