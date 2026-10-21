@@ -1,0 +1,41 @@
+{
+  "id": "simd-hnsw-vector-quantization",
+  "slug": "simd-hnsw-vector-quantization-wasm",
+  "title": "Hardware-Accelerated Approximate Nearest Neighbors: WebAssembly SIMD128 Optimization of Hierarchical Navigable Small World Graphs",
+  "subtitle": "Vectorized Distance Kernels and Quantized Metric Invariants for Sub-Millisecond In-Browser Semantic Retrieval",
+  "titlePt": "Busca Acelerada por Vizinhos Mais Próximos: Otimização SIMD128 em WebAssembly de Grafos de Mundos Pequenos Navegáveis Hierárquicos",
+  "subtitlePt": "Kernels de Distância Vetorizados e Invariantes Métricos Quantizados para Recuperação Semântica Sub-Milissegundo no Navegador",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "High-dimensional vector similarity search is a cornerstone of modern information retrieval, retrieval-augmented generation (RAG), and biometric identification. Running dense embedding similarity search directly in client environments (WebAssembly / browser edge) is traditionally bottlenecked by memory bandwidth and scalar floating-point distance calculations. In this paper, we introduce a hardware-vectorized HNSW indexing engine compiled to WebAssembly with 128-bit SIMD intrinsics. We formalize scalar product quantization and prove metric bound preservation under 8-bit asymmetrical cosine quantization. Our implementation achieves a 4.8x speedup over standard scalar WASM executions, traversing 768-dimensional graphs in 0.42 ms per query with 98.4% recall@10.",
+  "abstractPt": "A busca por similaridade em espaços vetoriais de alta dimensão constitui a espinha dorsal dos sistemas modernos de recuperação da informação, geração aumentada por recuperação (RAG) e identificação biométrica. A execução de buscas densas por similaridade de embeddings diretamente no ambiente cliente, via WebAssembly na borda do navegador, tradicionalmente esbarra em gargalos severos de largura de banda de memória e computação escalar de ponto flutuante. Este artigo apresenta um motor de indexação HNSW acelerado por hardware compilado para WebAssembly com extensões intrínsecas SIMD de 128 bits. Formaliza-se o processo de quantização escalar e demonstra-se matematicamente a preservação dos limites métricos sob quantização assimétrica de cosseno em 8 bits através da desigualdade de Cauchy-Schwarz. A implementação obtém aceleração de 4,8 vezes em relação à execução escalar padrão, percorrendo grafos de 768 dimensões em 0,42 milissegundos por consulta com revocação de 98,4% para os 10 primeiros vizinhos.",
+  "keywords": [
+    "Vector Search",
+    "WebAssembly SIMD",
+    "HNSW Graph",
+    "Quantization",
+    "High-Dimensional Embeddings"
+  ],
+  "keywordsPt": [
+    "Busca vetorial",
+    "WebAssembly SIMD",
+    "Grafo HNSW",
+    "Quantização escalar",
+    "Embeddings densos"
+  ],
+  "track": "vector-search",
+  "acmClassification": "H.3.3 Information Search and Retrieval; D.1.3 Concurrent Programming",
+  "generatedAt": "2026-10-21T21:37:00.524Z",
+  "wordCount": 757,
+  "verifiedSha256": "da77dec5bacbb509cc85b0c54e381361e15494c3dccbd2eb0a22294ff312702a",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}

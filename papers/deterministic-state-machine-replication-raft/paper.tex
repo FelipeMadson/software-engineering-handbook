@@ -51,8 +51,8 @@ $$\forall T \in \mathbb{N}, \quad |\{ i \in \{1, \dots, N\} \mid \text{role}_i(T
 
 \section{Complexity Analysis}
 \begin{itemize}
-  \item \textbf{Time:} Log append commitment: $\mathcal{O}(1)$ amortized amortized with circular buffer ring; RPC serialization: $\mathcal{O}(B)$ where $B$ is batch payload bytes.
-  \item \textbf{Space:} $\\mathcal{O}(M)$ where $M$ is total log entries retained between periodic snapshot checkpoints.
+  \item \textbf{Time:} Log append commitment: $\mathcal{O}(1)$ amortized with circular buffer ring; RPC serialization: $\mathcal{O}(B)$ where $B$ is batch payload bytes.
+  \item \textbf{Space:} $\mathcal{O}(M)$ where $M$ is total log entries retained between periodic snapshot checkpoints.
   \item \textbf{Communication:} Normal operation: $2(N-1)$ messages per batch commitment (AppendEntries request & response).
 \end{itemize}
 

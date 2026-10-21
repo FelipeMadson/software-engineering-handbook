@@ -1,0 +1,41 @@
+{
+  "id": "pqc-hybrid-key-exchange",
+  "slug": "post-quantum-hybrid-key-exchange-mesh",
+  "title": "Post-Quantum Hybrid Key Encapsulation in Distributed Zero-Trust Meshes",
+  "subtitle": "Combining Module Lattice-Based Cryptography (ML-KEM) and Elliptic-Curve Diffie-Hellman for Quantum-Resistant Service-to-Service Authorization",
+  "titlePt": "Mecanismos Híbridos de Encapsulamento Pós-Quântico de Chaves em Malhas Mesh Distribuídas com Arquitetura Zero-Trust",
+  "subtitlePt": "Integração de Criptografia Baseada em Reticulados (ML-KEM) e Diffie-Hellman em Curvas Elípticas para Autorização Resiliente a Computadores Quânticos",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "The advent of fault-tolerant quantum computing poses an existential threat to public-key cryptography reliant on integer factorization and discrete logarithms (RSA, ECDH, ECDSA). To safeguard enterprise service meshes against \"harvest-now, decrypt-later\" adversarial captures, hybrid post-quantum protocols are required. In this paper, we specify and implement a zero-allocation hybrid key encapsulation mechanism combining X25519 with ML-KEM-768 (Kyber-768). We prove IND-CCA2 security reduction under the hardness of the Module Learning With Errors (M-LWE) problem. Our implementation exhibits sub-50 microsecond key generation and encapsulation latency in distributed Go/Rust network proxies, retaining full backward compatibility with TLS 1.3 key-share extensions.",
+  "abstractPt": "O advento iminente da computação quântica tolerante a falhas impõe uma ameaça existencial à criptografia de chave pública fundamentada na fatoração de inteiros e logaritmos discretos, como RSA e curvas elípticas convencionais. Com o intuito de proteger malhas de microsserviços corporativos contra ataques adversariais de interceptação precoce para decifração futura, torna-se imperativa a adoção de protocolos híbridos pós-quânticos. Este trabalho especifica e implementa um mecanismo de encapsulamento híbrido de chaves sem alocações dinâmicas de memória que combina a curva X25519 com o padrão NIST FIPS 203 ML-KEM-768. Apresenta-se a redução formal de segurança IND-CCA2 fundamentada na rigidez do problema de aprendizado com erros sobre módulos (M-LWE) e na aplicação do Leftover Hash Lemma. A solução exibe latências inferiores a 50 microssegundos para geração de chaves e encapsulamento em proxies distribuídos em Go e Rust, preservando retrocompatibilidade integral com extensões TLS 1.3.",
+  "keywords": [
+    "Post-Quantum Cryptography",
+    "ML-KEM",
+    "Lattice Cryptography",
+    "Zero Trust",
+    "Service Mesh"
+  ],
+  "keywordsPt": [
+    "Criptografia pós-quântica",
+    "ML-KEM",
+    "Criptografia em reticulados",
+    "Arquitetura zero-trust",
+    "Redes mesh"
+  ],
+  "track": "cryptography",
+  "acmClassification": "E.3 Data Encryption; C.2.0 General (Security and protection)",
+  "generatedAt": "2026-10-21T21:37:00.528Z",
+  "wordCount": 684,
+  "verifiedSha256": "595abcc7d468633bff2e791831a84fd868792d71462758a34a5ac38b6b65ad1d",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}

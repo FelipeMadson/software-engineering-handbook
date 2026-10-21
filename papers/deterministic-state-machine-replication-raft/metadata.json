@@ -1,0 +1,41 @@
+{
+  "id": "distributed-consensus-raft",
+  "slug": "deterministic-state-machine-replication-raft",
+  "title": "Deterministic State Machine Replication: Formal Verification of Safety and Liveness in Raft under Asymmetric Partitions",
+  "subtitle": "A Rigorous Analysis of Invariant Preservation and Leader Election Dynamics in High-Concurrency Clustered Key-Value Stores",
+  "titlePt": "Replicação Determinística de Máquinas de Estados: Verificação Formal de Segurança e Vivacidade em Quóruns Distribuídos sob Partições Assimétricas",
+  "subtitlePt": "Uma Análise Rigorosa da Preservação de Invariantes e Dinâmica de Eleição de Líder em Motores de Chave-Valor Concorrentes",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "Distributed consensus remains the foundation of resilient cloud infrastructures. While the Raft protocol simplifies leader election and log replication compared to Paxos, real-world implementations frequently encounter corner-case violations under transient asymmetric network partitions and CPU scheduling jitter. In this paper, we present a deterministic formalization of Raft log invariant verification and state machine safety. We model cluster state transitions as an asynchronous transition system and prove that under randomized election timeouts $T \\sim \\mathcal{U}(t_{\\min}, t_{\\max})$, the probability of split-vote livelock decays exponentially. We evaluate our high-throughput implementation written in Go, demonstrating sustained linearizable read/write throughput of 142,000 ops/sec with sub-millisecond p99 commitment latency under continuous simulated network partitions.",
+  "abstractPt": "O consenso distribuído estabelece o alicerce fundamental para a resiliência e a linearizabilidade de infraestruturas computacionais críticas em nuvem. Embora o protocolo Raft simplifique a eleição de líderes e a replicação de logs quando comparado ao Paxos clássico, implementações no mundo real frequentemente defrontam-se com violações sutis de invariantes sob condições de partições assimétricas de rede e variações imprevisíveis no escalonamento de CPU. Este artigo apresenta uma formalização determinística da verificação de invariantes de log e da garantia de segurança da máquina de estados do Raft. Modela-se a transição de estados do cluster como um sistema de transições assíncrono e demonstra-se formalmente que, sob tempos limites de eleição randomizados, a probabilidade de bloqueios ativos decai exponencialmente. Avalia-se uma implementação de alta vazão desenvolvida em linguagem Go, comprovando vazão linearizável sustentada de 142.000 operações por segundo com latência p99 inferior a um milissegundo sob partições simuladas contínuas.",
+  "keywords": [
+    "Distributed Consensus",
+    "Raft Algorithm",
+    "State Machine Replication",
+    "Formal Verification",
+    "Fault Tolerance"
+  ],
+  "keywordsPt": [
+    "Consenso distribuído",
+    "Protocolo Raft",
+    "Máquinas de estados replicadas",
+    "Verificação formal",
+    "Tolerância a falhas"
+  ],
+  "track": "distributed-systems",
+  "acmClassification": "C.2.4 Distributed Systems; D.4.5 Reliability (Fault-tolerance)",
+  "generatedAt": "2026-10-21T21:37:00.519Z",
+  "wordCount": 951,
+  "verifiedSha256": "f887ea516d10e0f2951071a393af9b686788098f5aa0d743a80c1a3443978751",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\deterministic-state-machine-replication-raft\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}

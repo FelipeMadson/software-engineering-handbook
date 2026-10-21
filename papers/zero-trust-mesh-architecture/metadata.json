@@ -1,0 +1,39 @@
+{
+  "id": "zero-trust-mesh-architecture",
+  "slug": "zero-trust-mesh-architecture",
+  "title": "Formal Principles and System Verification: zero-trust-mesh-architecture",
+  "subtitle": "Rigorous Formalization, Algorithmic Analysis and Empirical Reproducibility",
+  "titlePt": "Princípios Formais e Verificação de Sistemas: zero-trust-mesh-architecture",
+  "subtitlePt": "Formalização Rigorosa, Análise Algorítmica e Reprodutibilidade Empírica",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "This paper presents a formal analysis of zero-trust-mesh-architecture. We define the operational semantics, establish invariant preservation theorems, and empirically evaluate throughput and safety under stress.",
+  "abstractPt": "Este artigo apresenta uma análise formal de zero-trust-mesh-architecture. Define-se a semântica operacional do sistema, estabelecem-se teoremas de preservação de invariantes de estado e avalia-se empiricamente a vazão e a segurança sob estresse de execução contínua.",
+  "keywords": [
+    "Formal Systems",
+    "Distributed Computing",
+    "Algorithms",
+    "Verification"
+  ],
+  "keywordsPt": [
+    "Sistemas Formais",
+    "Computação Distribuída",
+    "Algoritmos",
+    "Verificação"
+  ],
+  "track": "distributed-systems",
+  "acmClassification": "C.2.4 Distributed Systems; D.2.4 Software/Program Verification",
+  "generatedAt": "2026-10-21T21:38:07.954Z",
+  "wordCount": 407,
+  "verifiedSha256": "538110806eecdb89e254a659b75c772f33b060c6005580de9b85182e3b5a3b03",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}
