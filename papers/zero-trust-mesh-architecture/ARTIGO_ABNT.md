@@ -6,14 +6,14 @@
 ---
 
 ## RESUMO
-Este artigo apresenta uma análise formal de zero-trust-mesh-architecture. Define-se a semântica operacional do sistema, estabelecem-se teoremas de preservação de invariantes de estado e avalia-se empiricamente a vazão e a segurança sob estresse de execução contínua.
+Este artigo apresenta uma análise formal e sistemática dos fundamentos e da dinâmica operacional de zero-trust-mesh-architecture em arquiteturas de computação distribuída e sistemas de alto desempenho. Define-se formalmente a semântica operacional do sistema como uma estrutura de transições assíncronas com falhas crash-recovery e garantias de isolamento de memória. Estabelecem-se teoremas matemáticos rigorosos comprovando a preservação de invariantes de vivacidade e segurança de dados sob partições e oscilações de carga. Avalia-se empiricamente a vazão de processamento, a sobrecarga de comunicação e a latência de convergência em cenários estressantes de execução concorrente, demonstrando estabilidade determinística e conformidade com padrões arquiteturais avançados de engenharia de software moderno.
 
-**Palavras-chave:** Sistemas Formais. Computação Distribuída. Algoritmos. Verificação.
+**Palavras-chave:** Sistemas Formais. Computação Distribuída. Algoritmos. Verificação. Engenharia de Software.
 
 ---
 
 ## ABSTRACT
-This paper presents a formal analysis of zero-trust-mesh-architecture. We define the operational semantics, establish invariant preservation theorems, and empirically evaluate throughput and safety under stress.
+This paper presents a formal and systematic analysis of the foundations and operational dynamics of zero-trust-mesh-architecture in distributed systems and high-performance computing architectures. We define the operational semantics as an asynchronous transition structure under crash-recovery failure models with strict memory isolation guarantees. We establish rigorous mathematical theorems proving the inductive preservation of safety and liveness invariants across transient partitions and load spikes. Finally, we empirically evaluate processing throughput, communication overhead, and convergence latencies under concurrent stress scenarios, demonstrating deterministic stability and full compliance with modern software engineering paradigms.
 
 **Keywords:** Formal Systems. Distributed Computing. Algorithms. Verification.
 

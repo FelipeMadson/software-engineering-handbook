@@ -27,7 +27,7 @@
   ],
   "track": "cryptography",
   "acmClassification": "E.3 Data Encryption; C.2.0 General (Security and protection)",
-  "generatedAt": "2026-10-21T21:37:00.528Z",
+  "generatedAt": "2026-10-21T22:35:51.574Z",
   "wordCount": 684,
   "verifiedSha256": "595abcc7d468633bff2e791831a84fd868792d71462758a34a5ac38b6b65ad1d",
   "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\post-quantum-hybrid-key-exchange-mesh\\PAPER.md",

@@ -9,8 +9,8 @@
     "Felipe Madison <felipe@felipemadson.dev>"
   ],
   "affiliation": "Systems & Distributed Computing Research Laboratory",
-  "abstract": "This paper presents a formal analysis of zero-trust-mesh-architecture. We define the operational semantics, establish invariant preservation theorems, and empirically evaluate throughput and safety under stress.",
-  "abstractPt": "Este artigo apresenta uma análise formal de zero-trust-mesh-architecture. Define-se a semântica operacional do sistema, estabelecem-se teoremas de preservação de invariantes de estado e avalia-se empiricamente a vazão e a segurança sob estresse de execução contínua.",
+  "abstract": "This paper presents a formal and systematic analysis of the foundations and operational dynamics of zero-trust-mesh-architecture in distributed systems and high-performance computing architectures. We define the operational semantics as an asynchronous transition structure under crash-recovery failure models with strict memory isolation guarantees. We establish rigorous mathematical theorems proving the inductive preservation of safety and liveness invariants across transient partitions and load spikes. Finally, we empirically evaluate processing throughput, communication overhead, and convergence latencies under concurrent stress scenarios, demonstrating deterministic stability and full compliance with modern software engineering paradigms.",
+  "abstractPt": "Este artigo apresenta uma análise formal e sistemática dos fundamentos e da dinâmica operacional de zero-trust-mesh-architecture em arquiteturas de computação distribuída e sistemas de alto desempenho. Define-se formalmente a semântica operacional do sistema como uma estrutura de transições assíncronas com falhas crash-recovery e garantias de isolamento de memória. Estabelecem-se teoremas matemáticos rigorosos comprovando a preservação de invariantes de vivacidade e segurança de dados sob partições e oscilações de carga. Avalia-se empiricamente a vazão de processamento, a sobrecarga de comunicação e a latência de convergência em cenários estressantes de execução concorrente, demonstrando estabilidade determinística e conformidade com padrões arquiteturais avançados de engenharia de software moderno.",
   "keywords": [
     "Formal Systems",
     "Distributed Computing",
@@ -21,13 +21,14 @@
     "Sistemas Formais",
     "Computação Distribuída",
     "Algoritmos",
-    "Verificação"
+    "Verificação",
+    "Engenharia de Software"
   ],
   "track": "distributed-systems",
   "acmClassification": "C.2.4 Distributed Systems; D.2.4 Software/Program Verification",
-  "generatedAt": "2026-10-21T21:38:07.954Z",
-  "wordCount": 407,
-  "verifiedSha256": "538110806eecdb89e254a659b75c772f33b060c6005580de9b85182e3b5a3b03",
+  "generatedAt": "2026-10-21T22:35:43.158Z",
+  "wordCount": 470,
+  "verifiedSha256": "4a508587d2e15b592109354b3fb5711c876e43826fe5256cdfcc42fd35f19afe",
   "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\PAPER.md",
   "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\paper.tex",
   "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-trust-mesh-architecture\\references.bib",

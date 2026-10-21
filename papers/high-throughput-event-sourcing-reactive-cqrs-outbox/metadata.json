@@ -1,0 +1,41 @@
+{
+  "id": "event-sourcing-reactive-cqrs",
+  "slug": "high-throughput-event-sourcing-reactive-cqrs-outbox",
+  "title": "High-Throughput Reactive Event Sourcing and Transactional Outbox: Provable Eventual Consistency in Microservice Mesh Topologies",
+  "subtitle": "Dual-Phase Monotonic Clocks, Deduplication Semantics, and Resilient Stream Partitioning in Cloud Native Architectures",
+  "titlePt": "Event Sourcing Reativo e Transactional Outbox de Alta Vazão: Consistência Eventual Provável em Topologias de Malha de Microsserviços",
+  "subtitlePt": "Relógios Monotônicos Bifásicos, Semântica de Deduplicação e Particionamento Resiliente de Fluxos em Arquiteturas Nativas da Nuvem",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "Distributed enterprise applications increasingly migrate from monolithic relational databases to asynchronous event-driven architectures. Maintaining reliable causal ordering and state synchronization between transactional command write models and denormalized read projections remains a notoriously difficult challenge. In this paper, we formulate an enterprise event sourcing and reactive Command Query Responsibility Segregation (CQRS) framework featuring transactional outbox synchronization. We provide a rigorous mathematical model of dual-phase monotonic sequencing clocks and prove that projection divergence under arbitrary network partitions is strictly bounded. We evaluate an enterprise .NET implementation, demonstrating sustained ingestion of 210,000 domain events per second with zero message loss and sub-second projection convergence.",
+  "abstractPt": "Aplicações corporativas distribuídas migram intensamente de arquiteturas monolíticas baseadas em bancos relacionais centralizados para ecossistemas orientados a eventos reativos. Assegurar a ordenação causal de eventos e a sincronização fidedigna de estado entre o modelo de escrita transacional e as projeções desnormalizadas de leitura constitui um desafio fundamental na computação em nuvem. Este artigo formaliza uma arquitetura empresarial integrando Event Sourcing e segregação de responsabilidade entre consultas e comandos (CQRS) amparada pelo padrão Transactional Outbox. Apresenta-se um modelo matemático de relógios sequenciais monotônicos e demonstra-se formalmente que a divergência de projeções sob partições arbitrárias de rede converge a zero em tempo finito. A implementação desenvolvida em C# na plataforma .NET comprova ingestão sustentada de 210.000 eventos de domínio por segundo com zero perda de mensagens e convergência de projeções em tempo sub-segundo.",
+  "keywords": [
+    "Event Sourcing",
+    "CQRS",
+    "Transactional Outbox",
+    "Eventual Consistency",
+    "Distributed Systems"
+  ],
+  "keywordsPt": [
+    "Event Sourcing",
+    "Padrão CQRS",
+    "Transactional Outbox",
+    "Consistência eventual",
+    "Sistemas distribuídos"
+  ],
+  "track": "stream-processing",
+  "acmClassification": "H.2.4 Systems (Transaction processing); C.2.4 Distributed Systems",
+  "generatedAt": "2026-10-21T22:35:51.586Z",
+  "wordCount": 882,
+  "verifiedSha256": "43a55baf97f163ac4cd9bc34acfda658e63c8d243dda81b962996dac692da55b",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\high-throughput-event-sourcing-reactive-cqrs-outbox\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}

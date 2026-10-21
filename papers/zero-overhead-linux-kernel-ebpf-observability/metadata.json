@@ -1,0 +1,41 @@
+{
+  "id": "ebpf-kernel-observability",
+  "slug": "zero-overhead-linux-kernel-ebpf-observability",
+  "title": "Zero-Overhead Linux Kernel Observability: Safe Kernel Probing and Lockless Ring Buffer Serialization with eBPF in Rust",
+  "subtitle": "Formal Invariant Verification of Kernel Memory Safety and Lock-Free Ring Buffer Throughput in Production Systems",
+  "titlePt": "Observabilidade de Kernel Linux com Sobrecarga Zero: Sondagem Segura e Serialização em Buffers Circulares Lockless com eBPF em Rust",
+  "subtitlePt": "Verificação Formal da Segurança de Memória no Kernel e Vazão de Ring Buffers sem Travas em Sistemas de Produção",
+  "authors": [
+    "Felipe Madison <felipe@felipemadson.dev>"
+  ],
+  "affiliation": "Systems & Distributed Computing Research Laboratory",
+  "abstract": "Production cloud infrastructures demand continuous runtime observability without imposing latency penalties or risking kernel destabilization. Traditional dynamic tracing techniques, such as kernel modules or ptrace breakpoints, incur severe context-switching overhead and pose significant panic hazards. In this paper, we introduce a zero-overhead kernel telemetry engine implemented in Rust using the Aya eBPF framework. We formally prove memory safety guarantees enforced by the Linux eBPF verifier under static path analysis and model lockless multi-producer single-consumer (MPSC) ring buffer queues. Our system sustains over 2.4 million kernel tracepoints per second per core with under 1.2% CPU overhead and zero memory allocation in the kernel hot path.",
+  "abstractPt": "Infraestruturas corporativas modernas em computação em nuvem demandam observabilidade contínua em tempo real sem imposição de penalidades de latência ou riscos de instabilidade ao núcleo do sistema operacional. Mecanismos tradicionais de rastreamento dinâmico, como módulos de kernel personalizados ou interceptações baseadas em ptrace, introduzem sobrecargas severas de troca de contexto e riscos de falha catastrófica. Este artigo apresenta um motor de telemetria de kernel de sobrecarga zero desenvolvido na linguagem Rust com o framework Aya eBPF. Demonstra-se formalmente as garantias de segurança de memória impostas pelo verificador estático do kernel Linux sob análise de fluxo de controle e modela-se o comportamento de buffers circulares lockless do tipo múltiplos produtores e consumidor único. O sistema processa mais de 2,4 milhões de tracepoints por segundo por núcleo com consumo de CPU inferior a 1,2% e zero alocações dinâmicas de memória no caminho crítico.",
+  "keywords": [
+    "Linux eBPF",
+    "Kernel Observability",
+    "Rust Aya",
+    "Lock-Free Ring Buffer",
+    "Memory Safety"
+  ],
+  "keywordsPt": [
+    "Linux eBPF",
+    "Observabilidade de sistemas",
+    "Linguagem Rust",
+    "Buffer circular sem travas",
+    "Segurança de memória"
+  ],
+  "track": "kernel-systems",
+  "acmClassification": "D.4.6 Security and Protection; D.4.8 Performance (Operational analysis)",
+  "generatedAt": "2026-10-21T22:35:51.578Z",
+  "wordCount": 896,
+  "verifiedSha256": "a04f43387e662fcc42a05d68439ef08b4453a47b1738cc1d079560c994cbf2a8",
+  "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\PAPER.md",
+  "outputPathLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\paper.tex",
+  "outputPathBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\references.bib",
+  "outputPathAbntMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\ARTIGO_ABNT.md",
+  "outputPathAbntLatex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\artigo_abnt.tex",
+  "outputPathAbntBibtex": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\referencias_abnt.bib",
+  "outputPathAbntAudit": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\zero-overhead-linux-kernel-ebpf-observability\\CONFORMIDADE_ABNT.md",
+  "abntCompliant": true
+}

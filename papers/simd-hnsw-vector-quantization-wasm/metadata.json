@@ -27,7 +27,7 @@
   ],
   "track": "vector-search",
   "acmClassification": "H.3.3 Information Search and Retrieval; D.1.3 Concurrent Programming",
-  "generatedAt": "2026-10-21T21:37:00.524Z",
+  "generatedAt": "2026-10-21T22:35:51.569Z",
   "wordCount": 757,
   "verifiedSha256": "da77dec5bacbb509cc85b0c54e381361e15494c3dccbd2eb0a22294ff312702a",
   "outputPathMarkdown": "C:\\Users\\felip\\Documents\\github_improvement\\papers\\simd-hnsw-vector-quantization-wasm\\PAPER.md",

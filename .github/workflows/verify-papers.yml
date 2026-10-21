@@ -1,0 +1,116 @@
+name: Verify Academic Papers & ABNT Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-papers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify ABNT NBR 6022 & IEEE Academic Artifacts
+        run: |
+          node -e "
+            const fs = require('fs');
+            const crypto = require('crypto');
+            const path = require('path');
+
+            const papersDir = 'papers';
+            if (!fs.existsSync(papersDir)) {
+              console.log('No papers directory found.');
+              process.exit(0);
+            }
+
+            const folders = fs.readdirSync(papersDir, { withFileTypes: true })
+              .filter(d => d.isDirectory())
+              .map(d => d.name);
+
+            console.log('🔍 Auditing ' + folders.length + ' academic research tracks...\n');
+            let failures = 0;
+
+            const REQUIRED_FILES = [
+              'ARTIGO_ABNT.md',
+              'artigo_abnt.tex',
+              'referencias_abnt.bib',
+              'CONFORMIDADE_ABNT.md',
+              'ARTIGO_ABNT.html',
+              'PAPER.md',
+              'paper.tex',
+              'references.bib',
+              'metadata.json'
+            ];
+
+            for (const folder of folders) {
+              const dir = path.join(papersDir, folder);
+              console.log('Checking: ' + folder);
+
+              // 1. Check all required files
+              for (const req of REQUIRED_FILES) {
+                const f = path.join(dir, req);
+                if (!fs.existsSync(f)) {
+                  console.error('  ❌ Missing required file: ' + req);
+                  failures++;
+                }
+              }
+
+              // 2. Validate metadata.json
+              const metaPath = path.join(dir, 'metadata.json');
+              if (fs.existsSync(metaPath)) {
+                try {
+                  const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+                  const mdPath = path.join(dir, 'PAPER.md');
+                  if (fs.existsSync(mdPath)) {
+                    const content = fs.readFileSync(mdPath);
+                    const hash = crypto.createHash('sha256').update(content).digest('hex');
+                    if (hash !== meta.verifiedSha256) {
+                      console.error('  ❌ Hash mismatch in ' + folder + ': expected ' + meta.verifiedSha256 + ', got ' + hash);
+                      failures++;
+                    }
+                  }
+
+                  // 3. Check ABNT NBR 6028 word count (100-250 words)
+                  if (meta.abstractPt) {
+                    const words = meta.abstractPt.trim().split(/\s+/).filter(Boolean).length;
+                    if (words < 100 || words > 250) {
+                      console.error('  ❌ NBR 6028 violation: abstractPt word count (' + words + ') out of bounds [100, 250]');
+                      failures++;
+                    } else {
+                      console.log('  ✔ NBR 6028 Abstract word count verified: ' + words + ' words');
+                    }
+                  }
+
+                  // 4. Check LaTeX class abntex2
+                  const texFile = path.join(dir, 'artigo_abnt.tex');
+                  if (fs.existsSync(texFile)) {
+                    const texContent = fs.readFileSync(texFile, 'utf8');
+                    if (!texContent.includes('abntex2') || !texContent.includes('abntex2cite')) {
+                      console.error('  ❌ LaTeX abntex2/abntex2cite missing in ' + texFile);
+                      failures++;
+                    } else {
+                      console.log('  ✔ abntex2 LaTeX structure verified');
+                    }
+                  }
+                } catch (e) {
+                  console.error('  ❌ Metadata parse error: ' + e.message);
+                  failures++;
+                }
+              }
+              console.log('  ✔ All requirements verified for ' + folder + '\n');
+            }
+
+            if (failures > 0) {
+              console.error('Total failures: ' + failures);
+              process.exit(1);
+            }
+            console.log('🎉 100% Academic papers and ABNT NBR 6022/6028/6023/10520 standards verified successfully!');
+          "

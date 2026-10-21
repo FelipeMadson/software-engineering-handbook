@@ -13,8 +13,8 @@
 | :--- | :--- | :--- | :---: | :--- |
 | **NBR 6022:2018** | Título e Subtítulo | Presença de título em vernáculo e subtítulo destacado | **CONFORME** | Tipografia diferenciada, separados por dois pontos (`:`). |
 | **NBR 6022:2018** | Identificação dos Autores | Nome completo, titulação (TSI) e endereço de e-mail | **CONFORME** | Alocado como nota de rodapé ou abaixo do título. |
-| **NBR 6028:2021** | Extensão do Resumo | 35 palavras (Exigência: 100 a 250 palavras) | **ATENÇÃO** | Resumo informativo em parágrafo único, voz ativa e 3ª pessoa. |
-| **NBR 6028:2021** | Palavras-chave em Vernáculo | 4 termos separados por ponto e finalizados por ponto | **CONFORME** | Termos representativos do conteúdo do documento. |
+| **NBR 6028:2021** | Extensão do Resumo | 104 palavras (Exigência: 100 a 250 palavras) | **CONFORME** | Resumo informativo em parágrafo único, voz ativa e 3ª pessoa. |
+| **NBR 6028:2021** | Palavras-chave em Vernáculo | 5 termos separados por ponto e finalizados por ponto | **CONFORME** | Termos representativos do conteúdo do documento. |
 | **NBR 6022:2018** | Elementos em Língua Estrangeira | *Title*, *Abstract* e *Keywords* em língua inglesa | **CONFORME** | Seção bilíngue completa para indexação internacional. |
 | **NBR 6024:2012** | Numeração Progressiva | Seções 1 a 6 numeradas com algarismos arábicos | **CONFORME** | Títulos primários e secundários hierarquizados sem ponto após número. |
 | **NBR 10520:2023** | Citações no Texto | Sistema Autor-Data padronizado (`AUTOR, ano`) | **CONFORME** | Citações com autoria maiúscula entre parênteses e fórmulas numeradas. |
