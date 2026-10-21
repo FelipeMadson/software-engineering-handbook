@@ -30,6 +30,18 @@ Every book in this collection is backed by an immutable cryptographic SHA-256 ch
 
 ---
 
+## 🎓 Formal Academic Research Papers (IEEEtran & BibTeX)
+
+Peer-reviewed grade academic research articles with mathematical specifications, formal theorems, proofs, IEEEtran LaTeX templates, and BibTeX citations:
+
+| Title & Research Track | Formal Mathematical Specification & Theorems | Mathematical Model | Research Artifacts |
+| :--- | :--- | :--- | :---: |
+| **Deterministic State Machine Replication: Formal Safety and Liveness Verification in Distributed Log Quorums Under Asymmetric Partitions**<br>*(Distributed Systems & Formal Methods)* | • **Theorem 1 (State Machine Safety):** Identical commit index $k$ on non-faulty replicas implies identical command evaluation $C_i(k) = C_j(k)$.<br>• **Theorem 2 (Log Matching Property):** Equal term & index guarantees identical log prefix. | $\mathbf{S}_i = (t_i, v_i, \mathcal{L}_i, c_i, a_i)$<br>Quorum: $\mathcal{Q} = \lfloor N/2 \rfloor + 1$ | [📄 Article](papers/deterministic-state-machine-replication-raft/paper.md) · [LaTeX](papers/deterministic-state-machine-replication-raft/paper.tex) · [BibTeX](papers/deterministic-state-machine-replication-raft/references.bib) |
+| **Sub-Millisecond Approximate Nearest Neighbor Search in WebAssembly: 128-Bit SIMD Quantization and Memory-Bounded Graph Traversal**<br>*(Algorithms & Hardware Acceleration)* | • **Quantization Error Bound:** Uniform scalar quantization cosine error strictly bounded by Cauchy-Schwarz inequality: $\|d_c(\mathbf{q}, \mathbf{x}) - d_c(\mathbf{q}, \tilde{\mathbf{x}})\| \le \frac{\sqrt{D}}{255}$.<br>• Hardware SIMD128 dot product vectorization. | $\mathbf{q} \cdot \mathbf{x} = \sum_{k=0}^{D-1} q_k \cdot x_k$<br>$\mathcal{O}(D/4)$ WASM cycles | [📄 Article](papers/simd-hnsw-vector-quantization-wasm/paper.md) · [LaTeX](papers/simd-hnsw-vector-quantization-wasm/paper.tex) · [BibTeX](papers/simd-hnsw-vector-quantization-wasm/references.bib) |
+| **Post-Quantum Hybrid Key Encapsulation Mechanisms in Zero-Trust Edge Mesh Networks: An Empirical IND-CCA2 Reduction**<br>*(Cryptography & Network Security)* | • **IND-CCA2 Security Reduction:** Hybrid encapsulation remains indistinguishable under adaptive chosen-ciphertext attack as long as either ML-KEM-768 or X25519 is unbroken.<br>• Dual entropy extraction via Leftover Hash Lemma. | $\mathbf{K} = \text{KDF}(\mathbf{K}_{\text{pqc}} \mathbin{\Vert} \mathbf{K}_{\text{classic}} \mathbin{\Vert} \mathbf{c}_1 \mathbin{\Vert} \mathbf{c}_2)$<br>$\mathbf{A}_{\text{Q}} \le \epsilon_{\text{KEM}} + \epsilon_{\text{ECDH}}$ | [📄 Article](papers/post-quantum-hybrid-key-exchange-mesh/paper.md) · [LaTeX](papers/post-quantum-hybrid-key-exchange-mesh/paper.tex) · [BibTeX](papers/post-quantum-hybrid-key-exchange-mesh/references.bib) |
+
+---
+
 ## Architectural Topology
 
 ```
