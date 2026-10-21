@@ -25,9 +25,10 @@ jobs:
             const crypto = require('crypto');
             const path = require('path');
             const manifest = JSON.parse(fs.readFileSync('ebooks/manifest.json', 'utf8'));
+            const volumes = manifest.volumes || manifest.ebooks || [];
             let failed = 0;
-            console.log('Verifying ' + manifest.ebooks.length + ' technical volumes...');
-            for (const b of manifest.ebooks) {
+            console.log('Verifying ' + volumes.length + ' technical volumes...');
+            for (const b of volumes) {
               const file = path.join('ebooks', b.slug, 'README.md');
               if (!fs.existsSync(file)) {
                 console.error('ERROR: Missing ' + file);
