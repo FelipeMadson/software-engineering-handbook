@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Madison — Artigos de Pesquisa Acadêmica Formal (ABNT & IEEE)</title>
+  <meta name="description" content="Tratados de pesquisa acadêmica formal com modelos matemáticos, teoremas demonstrados, fontes LaTeX abntex2/IEEEtran e visualizador de impressão ABNT NBR 14724.">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --tag-bg: #21262d;
+      --success: #3fb950;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --surface: #f6f8fa;
+        --border: #d0d7de;
+        --text-main: #24292f;
+        --text-muted: #57606a;
+        --accent: #0969da;
+        --accent-hover: #0550ae;
+        --tag-bg: #eaeef2;
+        --success: #1a7f37;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      background: var(--tag-bg);
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+    p.lead {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 800px;
+    }
+    .nav-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    .nav-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .nav-links a:hover { text-decoration: underline; }
+    .papers-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+      transition: border-color 0.15s ease;
+    }
+    .card:hover {
+      border-color: var(--accent);
+    }
+    .track-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    h2 a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+    h2 a:hover {
+      color: var(--accent);
+    }
+    .theorem-box {
+      background: var(--tag-bg);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+      font-size: 0.9rem;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .artifacts-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--tag-bg);
+      color: var(--text-main);
+      transition: all 0.15s ease;
+    }
+    .btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+    .btn.primary:hover {
+      background: var(--accent-hover);
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Biblioteca de Pesquisa Formal</span>
+      <h1>Tratados e Artigos de Engenharia de Software & Sistemas Distribuídos</h1>
+      <p class="lead">
+        Produção acadêmica rigorosa com formulações matemáticas, teoremas com demonstração, fontes em LaTeX (<code>abntex2</code> e <code>IEEEtran</code>) e visualizadores de impressão em conformidade com as normas <strong>ABNT NBR 6022, 6028, 6023, 10520 e 14724</strong>.
+      </p>
+      <div class="nav-links">
+        <a href="https://github.com/FelipeMadson" target="_blank">↗ Perfil GitHub</a>
+        <a href="https://github.com/FelipeMadson/software-engineering-handbook" target="_blank">↗ Repositório no GitHub</a>
+        <a href="papers/MATRIZ_CITACAO_E_CURRICULO.md">📄 Matriz de Citações Cruzadas</a>
+        <a href="papers/all_papers_ieee.bib" download>📥 BibTeX (IEEE)</a>
+        <a href="papers/todas_referencias_abnt.bib" download>📥 BibTeX (ABNT)</a>
+      </div>
+    </header>
+
+    <main class="papers-grid">
+      <!-- Track 1: Raft -->
+      <article class="card">
+        <span class="track-tag">Sistemas Distribuídos & Métodos Formais</span>
+        <h2><a href="papers/deterministic-state-machine-replication-raft/ARTIGO_ABNT.html">Replicação Determinística de Máquinas de Estados: Verificação Formal de Segurança e Vivacidade em Quóruns Distribuídos sob Partições Assimétricas</a></h2>
+        <div class="theorem-box">
+          Teorema 1 (Segurança de Estado): Índice de commit k idêntico em nós sadios implica avaliação idêntica de comandos C_i(k) = C_j(k).
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/deterministic-state-machine-replication-raft/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/deterministic-state-machine-replication-raft/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/deterministic-state-machine-replication-raft/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/deterministic-state-machine-replication-raft/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/go-raft-distributed-consensus-kv" target="_blank">Código Fonte (Go) ↗</a>
+        </div>
+      </article>
+
+      <!-- Track 2: SIMD HNSW -->
+      <article class="card">
+        <span class="track-tag">Algoritmos & Aceleração de Hardware</span>
+        <h2><a href="papers/simd-hnsw-vector-quantization-wasm/ARTIGO_ABNT.html">Busca por Vizinhos Mais Próximos Sub-Milissegundo em WebAssembly: Quantização SIMD de 128-Bits e Travessia em Memória Limitada</a></h2>
+        <div class="theorem-box">
+          Limite de Erro de Quantização: Erro de cosseno por quantização escalar uniforme limitado estritamente pela desigualdade de Cauchy-Schwarz: ||d_c(q, x) - d_c(q, x_tilde)|| &le; sqrt(D)/255.
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/simd-hnsw-vector-quantization-wasm/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/simd-hnsw-vector-quantization-wasm/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/simd-hnsw-vector-quantization-wasm/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/simd-hnsw-vector-quantization-wasm/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/rust-wasm-simd-vector-search" target="_blank">Código Fonte (Rust/WASM) ↗</a>
+        </div>
+      </article>
+
+      <!-- Track 3: PQC Mesh -->
+      <article class="card">
+        <span class="track-tag">Criptografia Aplicada & Redes Mesh</span>
+        <h2><a href="papers/post-quantum-hybrid-key-exchange-mesh/ARTIGO_ABNT.html">Mecanismos Híbridos de Encapsulamento Pós-Quântico em Redes Mesh Edge Zero-Trust: Uma Redução Empírica IND-CCA2</a></h2>
+        <div class="theorem-box">
+          Redução IND-CCA2: Encapsulamento híbrido permanece indistinguível sob ataques de texto-cifrado escolhido enquanto ML-KEM-768 ou X25519 permanecerem inviolados.
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/post-quantum-hybrid-key-exchange-mesh/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/post-quantum-hybrid-key-exchange-mesh/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/post-quantum-hybrid-key-exchange-mesh/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/post-quantum-hybrid-key-exchange-mesh/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/pqc-hybrid-kms-mesh" target="_blank">Código Fonte (Rust) ↗</a>
+        </div>
+      </article>
+
+      <!-- Track 4: eBPF Linux -->
+      <article class="card">
+        <span class="track-tag">Sistemas Operacionais & Núcleo</span>
+        <h2><a href="papers/zero-overhead-linux-kernel-ebpf-observability/ARTIGO_ABNT.html">Observabilidade de Kernel Linux com Sobrecarga Zero: Sondagem Segura e Serialização em Buffers Circulares Lockless com eBPF em Rust</a></h2>
+        <div class="theorem-box">
+          Segurança Estática: Verificação de caminhos acíclicos pelo analisador estático do kernel Linux com complexidade &le; 1 milhão de instruções.
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/zero-overhead-linux-kernel-ebpf-observability/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/zero-overhead-linux-kernel-ebpf-observability/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/zero-overhead-linux-kernel-ebpf-observability/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/zero-overhead-linux-kernel-ebpf-observability/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/rust-ebpf-linux-observability-agent" target="_blank">Código Fonte (Rust/eBPF) ↗</a>
+        </div>
+      </article>
+
+      <!-- Track 5: zk-SNARKs -->
+      <article class="card">
+        <span class="track-tag">Criptografia & Provas de Conhecimento Zero</span>
+        <h2><a href="papers/zk-snarks-constant-time-pairing-wasm-verifier/ARTIGO_ABNT.html">Argumentos Sucintos de Conhecimento Não-Interativos de Conhecimento Zero (zk-SNARKs) em WebAssembly: Verificação de Pareamentos em Tempo Constante sobre Curvas BN254</a></h2>
+        <div class="theorem-box">
+          Solidez no Modelo de Grupo Algébrico (AGM): Probabilidade de aceitação de prova falsa estritamente limitada por q/r (r &approx; 2^254).
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/zk-snarks-constant-time-pairing-wasm-verifier/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/zk-snarks-constant-time-pairing-wasm-verifier/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/zk-snarks-constant-time-pairing-wasm-verifier/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/zk-snarks-constant-time-pairing-wasm-verifier/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/rust-zk-snark-verifier-wasm" target="_blank">Código Fonte (Rust/WASM) ↗</a>
+        </div>
+      </article>
+
+      <!-- Track 6: Event Sourcing & CQRS -->
+      <article class="card">
+        <span class="track-tag">Bancos de Dados Distribuídos & Streaming</span>
+        <h2><a href="papers/high-throughput-event-sourcing-reactive-cqrs-outbox/ARTIGO_ABNT.html">Event Sourcing Reativo e Transactional Outbox de Alta Vazão: Consistência Eventual Provável em Topologias de Malha de Microsserviços</a></h2>
+        <div class="theorem-box">
+          Convergência Causal: Para quaisquer duas réplicas de projeção R1 e R2 sob o mesmo prefixo de sequência monotônica s, State(R1, s) &equiv; State(R2, s).
+        </div>
+        <div class="artifacts-row">
+          <a class="btn primary" href="papers/high-throughput-event-sourcing-reactive-cqrs-outbox/ARTIGO_ABNT.html">🖨️ Ler Artigo / Imprimir ABNT</a>
+          <a class="btn" href="papers/high-throughput-event-sourcing-reactive-cqrs-outbox/PAPER.md">IEEE Paper (MD)</a>
+          <a class="btn" href="papers/high-throughput-event-sourcing-reactive-cqrs-outbox/artigo_abnt.tex">LaTeX (abntex2)</a>
+          <a class="btn" href="papers/high-throughput-event-sourcing-reactive-cqrs-outbox/CONFORMIDADE_ABNT.md">Auditoria Normativa</a>
+          <a class="btn" href="https://github.com/FelipeMadson/dotnet-csharp-cqrs-es-clean-architecture" target="_blank">Código Fonte (.NET 8 C#) ↗</a>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 Felipe Madison. Licenciado sob MIT.</span>
+      <span>Documentos gerados deterministicamente com validação de hash SHA-256.</span>
+    </footer>
+  </div>
+</body>
+</html>
